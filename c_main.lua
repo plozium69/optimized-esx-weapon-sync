@@ -1,4 +1,4 @@
-ESX = exports["es_extended"]:getSharedObject() -- esx legacy
+ESX = exports["es_extended"]:getSharedObject() -- esx export ONLY USE WITH ESX LEGACY!!!
 
 
 local weaponCheckInterval = 1000
