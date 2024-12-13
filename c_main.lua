@@ -1,6 +1,9 @@
 ESX = exports["es_extended"]:getSharedObject() -- esx export ONLY USE WITH ESX LEGACY!!!
 
 
+
+-- // EDIT \\ --
+local sleep = 250
 local weaponCheckInterval = 1000
 local isMonitoringAmmo = false
 
@@ -47,7 +50,8 @@ CreateThread(function()
             isMonitoringAmmo = true
             MonitorAmmo()
         end
-        
+        sleep = 35
+ -- // Prevents infinity datsbase spam \\ --
         Wait(weaponCheckInterval)
     end
 end)
